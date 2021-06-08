@@ -6,5 +6,6 @@ tasks:
   - init: >
       wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz &&
       tar xf cloudflared-stable-linux-amd64.tgz &&
-      sudo service ssh start
+      sudo service ssh start &&
+      wget -qO - https://nim-lang.org/choosenim/init.sh | sh
     command: echo 'start script'
