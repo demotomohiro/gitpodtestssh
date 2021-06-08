@@ -3,5 +3,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz && tar xf cloudflared-stable-linux-amd64.tgz
+  - init: >
+      wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.tgz &&
+      tar xf cloudflared-stable-linux-amd64.tgz &&
+      sudo service ssh start
     command: echo 'start script'
