@@ -12,3 +12,5 @@ touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 
 mkdir -p ~/.config/nvim
 cp /tmp/init.vim ~/.config/nvim
+
+echo "export PATH=/home/gitpod/.nimble/bin:$PATH" >> ~/.bashrc
